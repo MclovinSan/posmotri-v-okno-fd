@@ -37,6 +37,7 @@ fieldset {
 
 a {
   text-decoration: none;
+  color: #fff
 }
 
 ul,
@@ -58,10 +59,6 @@ ol {
 }
 
 /*Повторяющийся код*/
-.background-col:active {
-  background-color: #545050;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -80,6 +77,10 @@ ol {
   font-size: 18px;
   background-color: transparent;
   border: 1px solid #fff;
+}
+
+.button:active {
+  background-color: #545050;
 }
 
 .button:focus {
@@ -146,7 +147,7 @@ ol {
   gap: 5px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -196,10 +197,6 @@ ol {
   padding: 6px 73.5px;
 }
 
-.search-form__submit-button:active {
-  background-color: #545050;
-}
-
 .more-button {
   display: block;
   padding: 6px 0;
@@ -238,8 +235,12 @@ ol {
   text-transform: uppercase;
 }
 
-.content__video-card-description-container:hover {
+.content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__video-card-description {
@@ -254,10 +255,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.content__list-item:active {
-  background-color: #545050;
 }
 
 .content__video-card-thumbnail {
